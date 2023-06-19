@@ -1,0 +1,83 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    background-color: #e7dfd8;
+}
+@font-face {   
+    font-family: 'SemiCoder';
+    src: url('../../SemiCoder.otf') format('opentype');
+ }
+@font-face {   
+    font-family: 'digital';
+    src: url('digital.ttf') format('truetype');
+ }
+ .title{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 5px;
+ }
+.home-link {
+    margin-right: 35%;
+    margin-top: 5px;
+}
+h1 {
+    margin: 0;
+    color: black;
+    font-size: 48px;
+    font-family: SemiCoder;
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: dotted;
+    text-align: center;
+    text-shadow: 2px 2px whitesmoke;
+
+}
+.container {
+    min-height: 100vh;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-family: 'digital';
+    font-size: 12vw;
+    color: black;
+}
+
+.controls {
+    margin-top: 16px;
+}
+
+.button {
+    font-family: 'VT323';
+    font-weight: regular;
+    border-radius: 1px;
+    border: none;
+    color: white;
+    padding: 5px 9px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.set-alarm {
+    background-color: #214F6D;
+}
+
+.clear-alarm {
+    background-color: #592130;
+}
+#homebutton {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s; /* Add transition effect for smooth scaling */  
+}
+#homebutton:hover {
+    transform: scale(1.2); 
+    color: blue;
+  }

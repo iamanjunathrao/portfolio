@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Cirqua';
+    src: url('../Cirqua.ttf') format('truetype');
+  }
+  @font-face {   
+    font-family: 'SemiCoder';
+    src: url('../SemiCoder.otf') format('opentype');
+ }
+section {
+    display: block;
+}
+body {
+    margin: 0;
+    font-family: 'Cirqua';
+    color: black;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #e7dfd8;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 1075px;
+}
+header {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.project-tile {
+    flex-basis: 30%;
+}
+.project-tile {
+    flex-basis: 25%;
+    text-decoration: none;
+    font-family: 'SemiCoder';
+    width: 250px;
+    padding: 15px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    box-shadow: 5px 5px 8px black;
+}
+.project-tile img {
+    margin: 0;
+    width: 100%;
+    height: 175px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.project-tile:hover {
+    background-color: #f0f0f0;
+    box-shadow: 5px 5px 8px #ccc;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  
+  .project-tile:hover h3 {
+    color: #333;
+    transform: scale(1.025);
+    transition: transform 0.2s;
+  }
+  
+  .project-tile-image img:hover {
+    
+    transition: transform 0.2s;
+  }
+  #backbutton {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+  }
+  
+  .back-button-container {
+    position: relative;
+  }
+  
+  .back-button:hover #backbutton {
+    transform: scale(1.2);
+    color: blue;
+  }

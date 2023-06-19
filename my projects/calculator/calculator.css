@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+@font-face {   
+    font-family: 'SemiCoder';
+    src: url('../../SemiCoder.otf') format('opentype');
+ }
+ @font-face {   
+    font-family: 'Rocko';
+    src: url('Rocko.ttf') format('truetype');
+ }
+h1 {
+    color: black;
+    font-size: 48px;
+    font-family: SemiCoder;
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: dotted;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+    text-shadow: 2px 2px whitesmoke;
+    
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #e7dfd8;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    background-color: black;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.cal-button-row { 
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+.screen {
+    text-align: right;
+    font-family: 'Rocko';
+    font-size: 40px;
+    padding: 20px 5px;
+}
+.calc-button {
+    background-color: #d8d9db;
+    color: black;
+    border: none;
+    font-size: 40px;
+    font-family: 'Rocko';
+    font-weight: bold;
+    height: 100px;
+    flex-basis: 24.5%;
+}
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+.calc-button:active {
+    background-color: #bbbcb3;
+}
+.double {
+    flex-basis: 49.7%;
+}
+.triple {
+    flex-basis: 74.8%;
+}
+.func {
+    background-color: #df974c;
+    color: white;
+}
+.func:hover {
+    background-color: #dfb07e;
+}
+.func:active {
+    background-color: #dd8d37;
+}
+.home-link {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 999;
+}
+
+#homebutton {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+#homebutton:hover {
+    transform: scale(1.2); 
+    color: blue;
+  }
