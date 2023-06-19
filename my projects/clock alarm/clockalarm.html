@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clockalarm.css">
+    <link rel="icon" href="..\..\images\projects.png" type="image/png">
+    <title>Clock</title>
+</head>
+<header>
+    <section class="title">
+        <a href="..\..\index.html" class="home-link">
+            <img src="..\..\images\homebutton.png" alt="Home Button" id="homebutton">
+        </a> 
+        <h1>Clock Alarm</h1>
+    </section>
+</header>
+<body>
+    <section class="container">
+        <div id="clock"></div>
+        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
+        <div class="controls">
+            <button onclick="setAlarm()" class="button set-alarm">Set alarm</button>
+            <button onclick="clearAlarm()" class="button clear-alarm">Clear alarm</button>
+        </div>
+    </section>
+    <script src="clockalarm.js"></script>
+</body>
+</html>

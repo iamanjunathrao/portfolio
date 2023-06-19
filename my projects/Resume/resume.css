@@ -1,0 +1,116 @@
+@font-face {   
+    font-family: 'Rony';
+    src: url('Rony.ttf') format('truetype');
+
+}
+/* Global styles */
+body {
+    background-color: #e7dfd8;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: normal;
+    line-height: 1.5;
+  }
+  
+  /* Header styles */
+  header {
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin-top: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  /* Main styles */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  section table th,
+  section table td {
+    border: 1px solid #000;
+    padding: 8px;
+  }
+  
+  section table th {
+    font-weight: bold;
+  }
+  
+  section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Download CV button */
+  #cv-download-button {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: 'Rony';
+    margin-top: 10px;
+    text-align: center;
+    background-color: #214F6D;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  #cv-download-button:hover {
+    background-color: #0052a3;
+    transform: scale(1.025);
+    transition: transform 0.2s;
+  }
+  
+  #Picture {
+    margin-right: 15px;
+    border-radius: 10px;
+  }
+  #backbutton {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .back-button-container {
+    position: relative;
+  }
+  
+  .back-button:hover #backbutton {
+    transform: scale(1.2);
+    color: blue;
+  }

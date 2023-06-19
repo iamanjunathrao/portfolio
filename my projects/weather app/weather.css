@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+    
+}
+header {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+@font-face {   
+    font-family: 'SemiCoder';
+    src: url('../../SemiCoder.otf') format('opentype');
+ }
+ h1 {
+    color: black;
+    font-size: 48px;
+    font-family: SemiCoder;
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: dotted;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 2px 2px whitesmoke;
+    margin: 0 auto;
+    margin-top: 25px;
+    
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:#e7dfd8;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #d8a190;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    /* vertically */
+    justify-content: center;
+    /* horizontally */
+    margin: 10px;
+    font-size: 40px;
+    color: #333333;
+}
+
+#search {
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .home-link {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 999;
+}
+
+#homebutton {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+#homebutton:hover {
+  transform: scale(1.2); 
+  color: blue;
+}
