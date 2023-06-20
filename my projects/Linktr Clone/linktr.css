@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    font-family: Karla, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(0deg, rgb(253, 143, 103), rgb(212,99,163));
+    min-height: 110vh;
+}
+a {
+    color: rgb(101, 98, 98);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(218, 218, 218);
+}
+section {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.inner-link {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    transition: 0.1s ease-in;
+    border: 2px solid rgb(255, 255, 255);
+}
+.inner-link:hover {
+    background-color: transparent;
+}
+.sub-head {
+    font-size: 13px;
+}
+.links-section {
+    margin-top: 30px;
+}
+.sub-sec {
+    margin: 15px 0px;
+    
+}
+@media screen and (max-width: 720px) {
+    section {
+        width: 100%;
+    }
+}
+.dots-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #E2E2E2;
+    border-radius: 50%;
+    background-color: #F0F0F0;
+    transition: background-color 0.2s, transform 0.2s, color 0.2s;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .dots-menu:hover {
+    background-color: #EBEBEB;
+    transform: scale(1.05);
+  }
+  
+  .dots-menu:active {
+    color: black;
+    background-color: #E2E2E2;
+  }
+  
+  .dots-menu:focus {
+    outline: none;
+    border: 1px solid #D2D2D2;
+  }
+  .footer-logo {
+    width: auto;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+
+} 
