@@ -1,137 +1,203 @@
 html {
-    box-sizing: border-box;
-    
+  box-sizing: border-box;
 }
+
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
- @font-face {   
-    font-family: 'SemiCoder';
-    src: url('SemiCoder.otf') format('opentype');
- }
- @font-face {
-    font-family: 'Varela';
-    src: url('Varela.otf') format('opentype');
- }
+@font-face {   
+  font-family: 'SemiCoder';
+  src: url('SemiCoder.otf') format('opentype');
+}
 
- header nav a {
+@font-face {
+  font-family: 'Varela';
+  src: url('Varela.otf') format('opentype');
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'SemiCoder';
+  font-size: 18.67px;
+  font-stretch: semi-expanded;
+  text-decoration: solid;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+#MR {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s;
+  margin-right: 20px;
+}
+
+#MR:hover {
+  animation: rotateClockwise 4s infinite linear;
+  transform: scale(1.2);
+}
+
+@keyframes rotateClockwise {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
   text-decoration: none;
+  color: inherit;
 }
 
-header nav a:hover {
+.nav-links a:hover {
   color: blue;
 }
-  header {
-    text-align: center;
-    margin-bottom: 40px;
-    font-family: 'SemiCoder';
-    font-size: 18.67px;
-    font-stretch: semi-expanded;
-    text-decoration: solid;
+
+.nav-links h5 {
+  margin: 0 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
-header nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  
-  header nav h5 {
-    margin: 0 30px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  header nav h5:hover {
-    transform: scale(1.1); /* Zoom in on hover */
-    transition: transform 0.2s; /* Add transition effect for smooth scaling */
-    color: blue;
-    cursor: pointer;
-  }  
+
+.nav-links h5:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+  transition: transform 0.2s; /* Add transition effect for smooth scaling */
+  color: blue;
+  cursor: pointer;
+}
+
+
+
 body {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    background-color: #e7dfd8;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: #e7dfd8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+
+
 #propic {
-    width: 350px;
-    height:350px; 
-    max-width: 100%;
-    height: auto;
-    margin-left: 37.8px; /* Add spacing between image and border */
-    object-fit: cover;
+  width: 350px;
+  height: 350px; 
+  max-width: 100%;
+  height: auto;
+  margin-left: 37.8px; /* Add spacing between image and border */
+  object-fit: cover;
+  border: 1.05px solid black;
+  box-sizing: border-box;
 }
 
 #nametag {
-    font-family: 'Varela';
-    font-weight: bold;
-    font-size: 18.67px;
-    color: black;
-    margin-bottom: 10px; /* Add spacing between the name tag and social icons */
+  font-family: 'Varela';
+  font-weight: bold;
+  font-size: 18.67px;
+  color: black;
+  margin-bottom: 10px; /* Add spacing between the name tag and social icons */
 }
+
 #myname {
-    font-family: 'SemiCoder';
-    font-weight: bold;
-    font-size: 74.66px;
-    color: black;
+  font-family: 'SemiCoder';
+  font-weight: bold;
+  font-size: 74.66px;
+  color: black;
 }
+
+#oneliner, #salute {
+  font-family: 'SemiCoder';
+  font-weight: bold;
+  font-size: 28px;
+  color: black;
+}
+#salute {
+  
+  margin-bottom: 5px; /* Adjust this value */
+}
+
+#myname {
+  
+  margin: 5px 0; /* Adjust these values */
+}
+
 #oneliner {
-    font-family: 'SemiCoder';
-    font-weight: bold;
-    font-size: 28px;
-    color: black;
+  
+  margin-top: 5px; /* Adjust this value */
 }
-.fullbody{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fullbody {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-}
 .Name-Bio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid black; /* Add a thin black border */
-    padding: 30px; /* Add spacing inside the section */
-    margin: 30px; /* Add spacing outside the section */
-  }
-  
-  .text-container {
-    flex: 1;
-    margin-right: 20px; /* Add spacing between text and image */
-  }
-  
-  .image-container {
-    display: flex;
-    align-items: center;
-  }
-  .socials {
-    margin-top: 20px; /* Add spacing between text container and social icons */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #instalogo,
-  #fblogo,
-  #twitterlogo,
-  #linkedinlogo, 
-  #emaillogo {
-    width: 35px;
-    height: 35px;
-    margin: 10px; /* Adjust the spacing between the icons */
-    transition: transform 0.2s; /* Add transition effect for smooth scaling */
-  }  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.25px solid black; /* Add a thin black border */
+  padding: 20px; /* Add spacing inside the section */
+  margin: 30px; /* Add spacing outside the section */
+}
 
-  #instalogo:hover,
-  #fblogo:hover,
-  #twitterlogo:hover,
-  #linkedinlogo:hover,
-  #emaillogo:hover {
-    transform: scale(1.2); /* Zoom in the icons on hover */
-    color: blue;
-  }
+.text-container {
+  flex: 1;
+  margin-right: 20px; /* Add spacing between text and image */
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.socials {
+  margin-top: 20px; /* Add spacing between text container and social icons */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials a {
+  border: none; /* Remove border around the anchor tags */
+  text-decoration: none; /* Remove underline from the anchor tags */
+}
+
+#phonelogo,
+#whatsapplogo,
+#linkedinlogo, 
+#emaillogo {
+  width: 35px;
+  height: 35px;
+  margin: 10px; /* Adjust the spacing between the icons */
+  transition: transform 0.2s; /* Add transition effect for smooth scaling */
+}  
+
+
+#phonelogo:hover,
+#whatsapplogo:hover,
+#linkedinlogo:hover,
+#emaillogo:hover {
+  transform: scale(1.2); /* Zoom in the icons on hover */
+}
