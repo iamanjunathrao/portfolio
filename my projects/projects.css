@@ -11,7 +11,8 @@ section {
 }
 body {
     margin: 0;
-    font-family: 'Cirqua';
+    font-family: 'SemiCoder';
+    font-size: 15px;
     color: black;
     width: 100vw;
     padding: 0;
@@ -90,7 +91,7 @@ img {
   }
   
   .back-button-container {
-    position: relative;
+    position: absolute;
   }
   
   .back-button:hover #backbutton {
