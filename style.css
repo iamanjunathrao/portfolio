@@ -111,6 +111,13 @@ body {
   box-sizing: border-box;
 }
 
+.vertical-line {
+  width: 1px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  background-color: rgb(117, 117, 117); /* Adjust the color as needed */
+  margin: 0 20px; /* Adjust the horizontal margin to ensure proper spacing */
+}
+
 #nametag {
   font-family: 'Varela';
   font-weight: bold;
@@ -160,6 +167,7 @@ body {
   border: 1.25px solid black; /* Add a thin black border */
   padding: 20px; /* Add spacing inside the section */
   margin: 30px; /* Add spacing outside the section */
+  margin-top: 50px;
 }
 
 .text-container {
@@ -170,6 +178,7 @@ body {
 .image-container {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 
 .socials {
