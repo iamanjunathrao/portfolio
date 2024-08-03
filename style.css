@@ -101,8 +101,8 @@ body {
 
 
 #propic {
-  width: 350px;
-  height: 350px; 
+  width: 370px;
+  height: 370px; 
   max-width: 100%;
   height: auto;
   margin-left: 37.8px; /* Add spacing between image and border */
@@ -138,6 +138,7 @@ body {
   font-weight: bold;
   font-size: 28px;
   color: black;
+  text-align: right;
 }
 #salute {
   
@@ -145,7 +146,7 @@ body {
 }
 
 #myname {
-  
+  text-align: right;
   margin: 5px 0; /* Adjust these values */
 }
 
@@ -173,6 +174,9 @@ body {
 .text-container {
   flex: 1;
   margin-right: 20px; /* Add spacing between text and image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .image-container {
