@@ -107,8 +107,8 @@ body {
   height: auto;
   margin-left: 37.8px; /* Add spacing between image and border */
   object-fit: cover;
-  border: 1.05px solid black;
-  box-sizing: border-box;
+  /* border: 1.05px solid black;
+  box-sizing: border-box; */
 }
 
 .vertical-line {
@@ -148,6 +148,7 @@ body {
 #myname {
   text-align: right;
   margin: 5px 0; /* Adjust these values */
+  color: #2C4F83;
 }
 
 #oneliner {
@@ -166,6 +167,7 @@ body {
   align-items: center;
   justify-content: space-between;
   border: 1.25px solid black; /* Add a thin black border */
+  border-radius: 20px;
   padding: 20px; /* Add spacing inside the section */
   margin: 30px; /* Add spacing outside the section */
   margin-top: 50px;
